@@ -1,0 +1,23 @@
+{
+  "name": "react-intro",
+  "version": "0.1.0",
+  "description": "react intro proj",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier \"src/**/*.{js,html}\" --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thejstranger/react-intro.git"
+  },
+  "author": "jamie strange",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thejstranger/react-intro/issues"
+  },
+  "homepage": "https://github.com/thejstranger/react-intro#readme",
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  }
+}
