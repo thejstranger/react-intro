@@ -15,12 +15,33 @@
       // *****************
       // code goes in here for now
       // *****************
+      const Pet = ({ name, animal, colour }) => {
+        return React.createElement("div", {}, [
+          React.createElement("h1", {}, name),
+          React.createElement("h2", {}, animal),
+          React.createElement("h2", {}, colour)
+        ]);
+      };
+
       const App = () => {
-        return React.createElement(
-          "div",
-          {},
-          React.createElement("h1", {}, "Adopt Me")
-        );
+        return React.createElement("div", { id: "something" }, [
+          React.createElement("h1", {}, "Adopt Me"),
+          React.createElement(Pet, {
+            name: "Keanu",
+            animal: "Cat",
+            colour: "Black"
+          }),
+          React.createElement(Pet, {
+            name: "Diablo",
+            animal: "Snake",
+            colour: "Rainbow"
+          }),
+          React.createElement(Pet, {
+            name: "Mephisto",
+            animal: "Snake",
+            colour: "Green and Brown"
+          })
+        ]);
       };
 
       ReactDOM.render(
