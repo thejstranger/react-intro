@@ -5,49 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Adopt Me!</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
     <div id="root">not rendered</div>
     <script src="https://unpkg.com/react@16.8.4/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16.8.4/umd/react-dom.development.js"></script>
-    <script>
-      // *****************
-      // code goes in here for now
-      // *****************
-      const Pet = ({ name, animal, colour }) => {
-        return React.createElement("div", {}, [
-          React.createElement("h1", {}, name),
-          React.createElement("h2", {}, animal),
-          React.createElement("h2", {}, colour)
-        ]);
-      };
-
-      const App = () => {
-        return React.createElement("div", { id: "something" }, [
-          React.createElement("h1", {}, "Adopt Me"),
-          React.createElement(Pet, {
-            name: "Keanu",
-            animal: "Cat",
-            colour: "Black"
-          }),
-          React.createElement(Pet, {
-            name: "Diablo",
-            animal: "Snake",
-            colour: "Rainbow"
-          }),
-          React.createElement(Pet, {
-            name: "Mephisto",
-            animal: "Snake",
-            colour: "Green and Brown"
-          })
-        ]);
-      };
-
-      ReactDOM.render(
-        React.createElement(App),
-        document.getElementById("root")
-      );
-    </script>
+    <script src="./App.js"></script>
   </body>
 </html>
